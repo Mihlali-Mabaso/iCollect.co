@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pricing | iCollect Logistics</title>
+    <meta name="description"
+        content="Transparent, affordable delivery pricing for individuals, small businesses, and enterprise clients across Bloemfontein and South Africa." />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="config.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body-md">
+
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant">
+        <div
+            class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+            <a class="font-display-lg text-display-lg text-primary tracking-tighter cursor-pointer"
+                href="index.html">iCollect</a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors"
+                    href="index.html">Home</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors"
+                    href="for-business.html">For Businesses</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors"
+                    href="how-it-works.html">How It Works</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors"
+                    href="local-proof.html">Local Proof</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors"
+                    href="about.html">About</a>
+            </div>
+            <div class="hidden md:block">
+                <a class="bg-primary text-on-primary font-statement-caps text-statement-caps px-6 py-3 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center"
+                    href="quote.html">Get a Quote</a>
+            </div>
+            <button id="mobileMenuBtn" class="md:hidden text-primary p-2">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+        <!-- Mobile Drawer -->
+        <div id="mobileDrawer"
+            class="hidden md:hidden bg-surface border-b border-outline-variant px-margin-mobile py-6 space-y-4">
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="index.html">Home</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="for-business.html">For Businesses</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="how-it-works.html">How It Works</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="local-proof.html">Local Proof</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="about.html">About</a>
+            <a class="block bg-primary text-on-primary font-statement-caps text-statement-caps px-6 py-3 text-center tracking-widest mt-4"
+                href="quote.html">Get a Quote</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-40 pb-20 px-margin-mobile md:px-margin-desktop bg-primary">
+        <div class="max-w-[1440px] mx-auto text-center">
+            <p class="font-statement-caps text-statement-caps text-on-primary opacity-50 mb-4 tracking-widest">TRANSPARENT PRICING</p>
+            <div class="thin-rule mb-8 opacity-20 max-w-xs mx-auto"></div>
+            <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary mb-6">
+                Simple. Honest. Affordable.
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-primary opacity-70 max-w-2xl mx-auto">
+                No hidden fees. No surprises. Every delivery is priced fairly — whether you're sending one parcel or
+                running a full business operation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Toggle: Individual / Business -->
+    <div class="sticky top-20 z-40 bg-surface border-b border-outline-variant">
+        <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="flex gap-0">
+                <button id="tabIndividual" onclick="switchTab('individual')"
+                    class="flex-1 md:flex-none py-4 px-8 font-statement-caps text-statement-caps text-secondary border-b-2 border-secondary transition-all">
+                    Individual
+                </button>
+                <button id="tabBusiness" onclick="switchTab('business')"
+                    class="flex-1 md:flex-none py-4 px-8 font-statement-caps text-statement-caps text-on-surface-variant border-b-2 border-transparent hover:text-secondary transition-all">
+                    Business
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- INDIVIDUAL PLANS -->
+    <div id="panelIndividual">
+
+        <!-- Individual Intro -->
+        <section class="py-16 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto text-center">
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                For individuals sending parcels across Bloemfontein. Pay per delivery — no subscription needed.
+                All deliveries include real-time tracking and WhatsApp notifications.
+            </p>
+        </section>
+
+        <!-- Individual Pricing Cards -->
+        <section class="pb-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Starter -->
+                <div class="bg-surface-container border border-outline-variant p-8 flex flex-col group hover:border-secondary transition-all duration-300">
+                    <div class="h-px w-12 bg-primary mb-6 group-hover:w-full transition-all duration-700"></div>
+                    <p class="font-statement-caps text-statement-caps text-secondary mb-2">LOCAL DROP</p>
+                    <div class="flex items-end gap-1 mb-1">
+                        <span class="font-display-lg text-display-lg text-primary">R49</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant mb-2">/ delivery</span>
+                    </div>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant mb-8">Within 5 km radius</p>
+                    <ul class="space-y-3 mb-10 flex-1">
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Same-day or scheduled delivery
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Real-time tracking link
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            WhatsApp delivery updates
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Up to 5 kg parcel
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant opacity-40">
+                            <span class="material-symbols-outlined text-base mt-0.5">remove</span>
+                            Proof of delivery photo
+                        </li>
+                    </ul>
+                    <a href="quote.html"
+                        class="bg-primary text-on-primary font-statement-caps text-statement-caps px-6 py-3 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center w-full">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Standard — Most Popular -->
+                <div class="bg-primary-container border-2 border-secondary p-8 flex flex-col relative">
+                    <div class="absolute -top-3 left-8">
+                        <span class="bg-secondary text-on-secondary font-statement-caps text-[10px] tracking-widest px-3 py-1">MOST POPULAR</span>
+                    </div>
+                    <div class="h-px w-full bg-secondary mb-6"></div>
+                    <p class="font-statement-caps text-statement-caps text-secondary mb-2">CITY DELIVERY</p>
+                    <div class="flex items-end gap-1 mb-1">
+                        <span class="font-display-lg text-display-lg text-white">R89</span>
+                        <span class="font-body-md text-body-md text-on-primary-container mb-2">/ delivery</span>
+                    </div>
+                    <p class="font-label-sm text-label-sm text-on-primary-container mb-8">5–20 km within Bloemfontein</p>
+                    <ul class="space-y-3 mb-10 flex-1">
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Same-day or scheduled delivery
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Real-time tracking link
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            WhatsApp delivery updates
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Up to 10 kg parcel
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Proof of delivery photo
+                        </li>
+                    </ul>
+                    <a href="quote.html"
+                        class="bg-secondary text-on-secondary font-statement-caps text-statement-caps px-6 py-3 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center w-full">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Express -->
+                <div class="bg-surface-container border border-outline-variant p-8 flex flex-col group hover:border-secondary transition-all duration-300">
+                    <div class="h-px w-12 bg-primary mb-6 group-hover:w-full transition-all duration-700"></div>
+                    <p class="font-statement-caps text-statement-caps text-secondary mb-2">EXPRESS</p>
+                    <div class="flex items-end gap-1 mb-1">
+                        <span class="font-display-lg text-display-lg text-primary">R149</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant mb-2">/ delivery</span>
+                    </div>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant mb-8">Priority dispatch, any Bloemfontein address</p>
+                    <ul class="space-y-3 mb-10 flex-1">
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Priority same-day delivery
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Real-time tracking link
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            WhatsApp + SMS updates
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Up to 20 kg parcel
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Proof of delivery photo
+                        </li>
+                    </ul>
+                    <a href="quote.html"
+                        class="bg-primary text-on-primary font-statement-caps text-statement-caps px-6 py-3 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center w-full">
+                        Book Now
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Add-ons note -->
+            <div class="mt-8 p-6 bg-surface-container-low border-l-2 border-outline-variant">
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                    <span class="text-secondary font-bold">Add-ons:</span> Fragile item handling +R20 · Evening delivery (after 18:00) +R30 · Weekend delivery +R40 · Extra weight beyond limit: R5/kg
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- BUSINESS PLANS -->
+    <div id="panelBusiness" class="hidden">
+
+        <!-- Business Intro -->
+        <section class="py-16 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto text-center">
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Subscription plans for businesses with recurring delivery needs. Save more as you scale — and get
+                branded delivery notifications sent on your behalf.
+            </p>
+        </section>
+
+        <!-- Business Pricing Cards -->
+        <section class="pb-section-gap px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Starter Business -->
+                <div class="bg-surface-container border border-outline-variant p-8 flex flex-col group hover:border-secondary transition-all duration-300">
+                    <div class="h-px w-12 bg-primary mb-6 group-hover:w-full transition-all duration-700"></div>
+                    <p class="font-statement-caps text-statement-caps text-secondary mb-2">STARTER</p>
+                    <div class="flex items-end gap-1 mb-1">
+                        <span class="font-display-lg text-display-lg text-primary">R799</span>
+                        <span class="font-body-md text-body-md text-on-surface-variant mb-2">/ month</span>
+                    </div>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant mb-8">Up to 20 deliveries/month</p>
+                    <ul class="space-y-3 mb-10 flex-1">
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            20 city deliveries included
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Real-time tracking for all orders
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            WhatsApp updates to your customers
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Business dashboard access
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant opacity-40">
+                            <span class="material-symbols-outlined text-base mt-0.5">remove</span>
+                            Branded notifications
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant opacity-40">
+                            <span class="material-symbols-outlined text-base mt-0.5">remove</span>
+                            Dedicated account manager
+                        </li>
+                    </ul>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant mb-4">R55/delivery after limit</p>
+                    <a href="quote.html"
+                        class="bg-primary text-on-primary font-statement-caps text-statement-caps px-6 py-3 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center w-full">
+                        Start Free Trial
+                    </a>
+                </div>
+
+                <!-- Growth — Most Popular -->
+                <div class="bg-primary-container border-2 border-secondary p-8 flex flex-col relative">
+                    <div class="absolute -top-3 left-8">
+                        <span class="bg-secondary text-on-secondary font-statement-caps text-[10px] tracking-widest px-3 py-1">MOST POPULAR</span>
+                    </div>
+                    <div class="h-px w-full bg-secondary mb-6"></div>
+                    <p class="font-statement-caps text-statement-caps text-secondary mb-2">GROWTH</p>
+                    <div class="flex items-end gap-1 mb-1">
+                        <span class="font-display-lg text-display-lg text-white">R1 899</span>
+                        <span class="font-body-md text-body-md text-on-primary-container mb-2">/ month</span>
+                    </div>
+                    <p class="font-label-sm text-label-sm text-on-primary-container mb-8">Up to 60 deliveries/month</p>
+                    <ul class="space-y-3 mb-10 flex-1">
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            60 city deliveries included
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Real-time tracking for all orders
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            WhatsApp updates to your customers
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Business dashboard access
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Branded notifications
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-primary-container opacity-40">
+                            <span class="material-symbols-outlined text-base mt-0.5">remove</span>
+                            Dedicated account manager
+                        </li>
+                    </ul>
+                    <p class="font-label-sm text-label-sm text-on-primary-container mb-4">R45/delivery after limit</p>
+                    <a href="quote.html"
+                        class="bg-secondary text-on-secondary font-statement-caps text-statement-caps px-6 py-3 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center w-full">
+                        Start Free Trial
+                    </a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-surface-container border border-outline-variant p-8 flex flex-col group hover:border-secondary transition-all duration-300">
+                    <div class="h-px w-12 bg-primary mb-6 group-hover:w-full transition-all duration-700"></div>
+                    <p class="font-statement-caps text-statement-caps text-secondary mb-2">ENTERPRISE</p>
+                    <div class="flex items-end gap-1 mb-1">
+                        <span class="font-headline-md text-headline-md text-primary mt-3">Custom</span>
+                    </div>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant mb-8">100+ deliveries/month · bespoke terms</p>
+                    <ul class="space-y-3 mb-10 flex-1">
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Unlimited deliveries (negotiated)
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Full real-time tracking suite
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Branded WhatsApp + SMS updates
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Full business dashboard
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            Dedicated account manager
+                        </li>
+                        <li class="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant">
+                            <span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings:'FILL' 1">check_circle</span>
+                            SLA agreement + priority support
+                        </li>
+                    </ul>
+                    <p class="font-label-sm text-label-sm text-on-surface-variant mb-4">Negotiated per delivery rate</p>
+                    <a href="quote.html"
+                        class="bg-primary text-on-primary font-statement-caps text-statement-caps px-6 py-3 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center w-full">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Volume note -->
+            <div class="mt-8 p-6 bg-surface-container-low border-l-2 border-outline-variant">
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                    <span class="text-secondary font-bold">All business plans include:</span> Monthly invoicing · Delivery proof records · Priority driver assignment · e-commerce integration support
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FAQ Strip -->
+    <section class="py-section-gap bg-surface-container">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-[900px] mx-auto">
+            <p class="font-statement-caps text-statement-caps text-secondary mb-4">PRICING FAQ</p>
+            <div class="thin-rule mb-12"></div>
+            <div class="space-y-0" id="faqList">
+
+                <div class="faq-item border-t border-outline-variant">
+                    <button class="w-full flex justify-between items-center py-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-headline-sm text-headline-sm pr-8">Are prices inclusive of VAT?</span>
+                        <span class="material-symbols-outlined text-secondary flex-shrink-0 transition-transform duration-300">add</span>
+                    </button>
+                    <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500">
+                        <p class="font-body-lg text-body-lg text-on-surface-variant pb-6">
+                            Yes. All prices displayed on this page are VAT-inclusive where applicable. For business accounts, a VAT-compliant invoice is issued monthly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item border-t border-outline-variant">
+                    <button class="w-full flex justify-between items-center py-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-headline-sm text-headline-sm pr-8">Can I get a custom quote for a large or unusual parcel?</span>
+                        <span class="material-symbols-outlined text-secondary flex-shrink-0 transition-transform duration-300">add</span>
+                    </button>
+                    <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500">
+                        <p class="font-body-lg text-body-lg text-on-surface-variant pb-6">
+                            Absolutely. Use our <a href="quote.html" class="text-secondary underline underline-offset-4">quote form</a> to describe your parcel, and we'll get back to you with a tailored price within the hour.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item border-t border-outline-variant">
+                    <button class="w-full flex justify-between items-center py-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-headline-sm text-headline-sm pr-8">Is there a minimum order for business accounts?</span>
+                        <span class="material-symbols-outlined text-secondary flex-shrink-0 transition-transform duration-300">add</span>
+                    </button>
+                    <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500">
+                        <p class="font-body-lg text-body-lg text-on-surface-variant pb-6">
+                            No minimum order is required. The Starter plan is billed monthly and covers up to 20 deliveries. If you need fewer, pay-per-delivery pricing may suit you better.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item border-t border-outline-variant">
+                    <button class="w-full flex justify-between items-center py-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-headline-sm text-headline-sm pr-8">What payment methods do you accept?</span>
+                        <span class="material-symbols-outlined text-secondary flex-shrink-0 transition-transform duration-300">add</span>
+                    </button>
+                    <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500">
+                        <p class="font-body-lg text-body-lg text-on-surface-variant pb-6">
+                            We accept EFT, card payments, and for business accounts, 30-day invoice terms (on approved credit). Cash on collection is available for individual deliveries.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item border-t border-outline-variant border-b">
+                    <button class="w-full flex justify-between items-center py-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-headline-sm text-headline-sm pr-8">Can I cancel or change my business plan?</span>
+                        <span class="material-symbols-outlined text-secondary flex-shrink-0 transition-transform duration-300">add</span>
+                    </button>
+                    <div class="faq-answer overflow-hidden max-h-0 transition-all duration-500">
+                        <p class="font-body-lg text-body-lg text-on-surface-variant pb-6">
+                            Yes. Business plans can be cancelled or upgraded at any time. Cancellations take effect at the end of the current billing period. Unused deliveries do not roll over.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-section-gap px-margin-mobile md:px-margin-desktop">
+        <div class="max-w-[900px] mx-auto bg-primary p-12 text-center">
+            <p class="font-statement-caps text-statement-caps text-on-primary opacity-50 mb-4 tracking-widest">READY?</p>
+            <h2 class="font-headline-md text-headline-md text-on-primary mb-4">Not sure which plan fits?</h2>
+            <p class="font-body-lg text-body-lg text-on-primary opacity-70 mb-8 max-w-xl mx-auto">
+                Tell us what you need and we'll recommend the right option — no obligation.
+            </p>
+            <a href="quote.html"
+                class="bg-secondary-container text-on-secondary-container font-statement-caps text-statement-caps px-10 py-4 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center">
+                Get a Custom Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp FAB -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <a class="bg-secondary text-on-secondary rounded-full h-14 w-14 flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95 group"
+            href="https://wa.me/message/W7LMMHQU652IN1" target="_blank" rel="noopener">
+            <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">chat</span>
+            <span
+                class="absolute right-16 bg-primary text-white text-[10px] px-3 py-1 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">WhatsApp Us</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-outline-variant pt-section-gap pb-gutter">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto flex flex-col gap-gutter">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                <div>
+                    <div class="font-headline-sm text-headline-sm text-primary mb-4">iCollect</div>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Premium regional logistics for
+                        those who value reliability and the art of the perfect delivery.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-16">
+                    <div class="flex flex-col gap-4">
+                        <span class="font-statement-caps text-statement-caps text-primary">Company</span>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="about.html">About</a>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="how-it-works.html">How It Works</a>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="local-proof.html">Local Proof</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="font-statement-caps text-statement-caps text-primary">Contact</span>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors" href="quote.html">Support</a>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors"
+                            href="https://www.instagram.com/icollect_za?utm_source=qr&igsh=MWc1YjI2dHlwOTJ5MQ==">Instagram</a>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors"
+                            href="https://wa.me/message/W7LMMHQU652IN1">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="thin-rule my-8"></div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="font-label-sm text-label-sm text-on-surface-variant">© 2026 iCollect Logistics. All rights
+                    reserved.</p>
+                <div class="flex gap-8">
+                    <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors"
+                        href="privacy-policy.html">Privacy Policy</a>
+                    <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors"
+                        href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        mobileMenuBtn.addEventListener('click', () => mobileDrawer.classList.toggle('hidden'));
+
+        // Tab switching
+        function switchTab(tab) {
+            const individual = document.getElementById('panelIndividual');
+            const business = document.getElementById('panelBusiness');
+            const tabI = document.getElementById('tabIndividual');
+            const tabB = document.getElementById('tabBusiness');
+
+            if (tab === 'individual') {
+                individual.classList.remove('hidden');
+                business.classList.add('hidden');
+                tabI.classList.add('text-secondary', 'border-secondary');
+                tabI.classList.remove('text-on-surface-variant', 'border-transparent');
+                tabB.classList.add('text-on-surface-variant', 'border-transparent');
+                tabB.classList.remove('text-secondary', 'border-secondary');
+            } else {
+                business.classList.remove('hidden');
+                individual.classList.add('hidden');
+                tabB.classList.add('text-secondary', 'border-secondary');
+                tabB.classList.remove('text-on-surface-variant', 'border-transparent');
+                tabI.classList.add('text-on-surface-variant', 'border-transparent');
+                tabI.classList.remove('text-secondary', 'border-secondary');
+            }
+        }
+
+        // FAQ accordion
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('.material-symbols-outlined');
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+            // Close all
+            document.querySelectorAll('.faq-answer').forEach(el => { el.style.maxHeight = '0px'; });
+            document.querySelectorAll('.faq-item button .material-symbols-outlined').forEach(ic => {
+                ic.textContent = 'add';
+                ic.style.transform = '';
+            });
+            // Open clicked if was closed
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.textContent = 'remove';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

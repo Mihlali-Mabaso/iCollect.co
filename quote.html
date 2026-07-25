@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Get a Quote | iCollect</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="config.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-primary/80 border-b border-outline-variant dark:border-outline">
+        <div
+            class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+            <a class="font-display-lg text-display-lg text-primary dark:text-primary-fixed tracking-tighter cursor-pointer transition-all duration-300"
+                href="index.html">
+                iCollect
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200"
+                    href="index.html">Home</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200"
+                    href="for-business.html">For Businesses</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200"
+                    href="how-it-works.html">How It Works</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200"
+                    href="local-proof.html">Local Proof</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200"
+                    href="pricing.html">Pricing</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200"
+                    href="about.html">About</a>
+                <a class="bg-primary text-on-primary font-statement-caps text-statement-caps px-6 py-3 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center"
+                    href="quote.html">
+                    Get a Quote
+                </a>
+            </nav>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" class="md:hidden text-primary p-2">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileDrawer"
+            class="hidden md:hidden bg-surface border-b border-outline-variant px-margin-mobile py-6 space-y-4">
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="index.html">Home</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="for-business.html">For Businesses</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="how-it-works.html">How It Works</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="local-proof.html">Local Proof</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="about.html">About</a>
+            <a class="block bg-secondary text-on-secondary font-statement-caps text-statement-caps px-6 py-3 text-center tracking-widest mt-4"
+                href="quote.html">Get a Quote</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-section-gap px-margin-mobile md:px-0">
+        <div class="mx-auto max-w-[400px]">
+            <!-- Header Section -->
+            <section class="mb-12">
+                <h1 class="font-display-lg text-display-lg mb-4 text-primary leading-tight">Request a Quote</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant opacity-80 max-w-[400px]">
+                    Reliable courier service for your unique logistics needs. Simple pricing, quiet precision.
+                </p>
+            </section>
+            <!-- Form Section -->
+            <form class="flex flex-col gap-10" id="quoteForm">
+                <!-- Name Field -->
+                <div class="flex flex-col gap-2 input-underline">
+                    <label class="font-statement-caps text-statement-caps text-primary uppercase tracking-widest"
+                        for="name">Name</label>
+                    <input
+                        class="w-full bg-transparent border-none border-b border-primary p-0 pb-2 focus:ring-0 text-body-lg font-body-lg text-primary placeholder:text-outline-variant/50"
+                        id="name" name="name" placeholder="Your full name" required="" type="text" />
+                </div>
+                <!-- Contact Number -->
+                <div class="flex flex-col gap-2 input-underline">
+                    <label class="font-statement-caps text-statement-caps text-primary uppercase tracking-widest"
+                        for="phone">Contact Number</label>
+                    <input
+                        class="w-full bg-transparent border-none border-b border-primary p-0 pb-2 focus:ring-0 text-body-lg font-body-lg text-primary placeholder:text-outline-variant/50"
+                        id="phone" name="phone" placeholder="+27 00 000 0000" required="" type="tel" />
+                </div>
+                <!-- Logistics Pair -->
+                <div class="grid grid-cols-1 gap-10">
+                    <div class="flex flex-col gap-2 input-underline">
+                        <label class="font-statement-caps text-statement-caps text-primary uppercase tracking-widest"
+                            for="pickup">Pickup Area</label>
+                        <input
+                            class="w-full bg-transparent border-none border-b border-primary p-0 pb-2 focus:ring-0 text-body-lg font-body-lg text-primary placeholder:text-outline-variant/50"
+                            id="pickup" name="pickup" placeholder="Suburb or City" required="" type="text" />
+                    </div>
+                    <div class="flex flex-col gap-2 input-underline">
+                        <label class="font-statement-caps text-statement-caps text-primary uppercase tracking-widest"
+                            for="dropoff">Drop-off Area</label>
+                        <input
+                            class="w-full bg-transparent border-none border-b border-primary p-0 pb-2 focus:ring-0 text-body-lg font-body-lg text-primary placeholder:text-outline-variant/50"
+                            id="dropoff" name="dropoff" placeholder="Suburb or City" required="" type="text" />
+                    </div>
+                </div>
+                <!-- Parcel Size / Notes -->
+                <div class="flex flex-col gap-2 input-underline">
+                    <label class="font-statement-caps text-statement-caps text-primary uppercase tracking-widest"
+                        for="notes">Parcel Size &amp; Notes</label>
+                    <textarea
+                        class="w-full bg-transparent border-none border-b border-primary p-0 pb-2 focus:ring-0 text-body-lg font-body-lg text-primary placeholder:text-outline-variant/50 resize-none"
+                        id="notes" name="notes" placeholder="e.g., 2kg box, fragile, furniture..." required=""
+                        rows="3"></textarea>
+                </div>
+                <!-- CTA and Footer -->
+                <div class="mt-4">
+                    <button
+                        class="w-full bg-secondary-container hover:bg-secondary text-on-secondary-container font-statement-caps text-statement-caps py-6 transition-all duration-300 uppercase tracking-[0.2em] flex items-center justify-center gap-3"
+                        type="submit">
+                        Request Your Delivery
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </button>
+                    <div class="mt-4 flex items-center gap-2 text-on-surface-variant opacity-70 justify-center">
+                        <span class="material-symbols-outlined text-[16px]">chat</span>
+                        <p class="font-label-sm text-label-sm">We'll WhatsApp you back within 15 minutes.</p>
+                    </div>
+                </div>
+            </form>
+            <!-- Decorative Image Anchor -->
+            <div class="mt-section-gap w-full aspect-video grayscale opacity-80 border border-outline-variant p-4">
+                <img class="w-full h-full object-cover"
+                    data-alt="A minimalist photograph of a clean, white-glove delivery service package."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdr3zEIiNyyExCbiQvO1DKo6GKG_tSppdIvDE1ixHsk7yREZzuRQuIgw-prlH_G7UsaDwgVd9hTGduJIugFVFCKQUOo_RRcJxIcKRevoyJWzKCARz07kLIj_cB-H7EFXhiocDaZI8w3wZHhRBkyf5JIMZtSFEQ18doGTD4XTHT9dyW8m2YbFRa_KB6ZcdPOuqY1Vb0I2Gvtb-BdGO7eebCJU-HaI3Lzj3k4vaBCCWO3x7UM3Bs66IWR3lIx0_19r01pjwoAUmFtcH3" />
+            </div>
+        </div>
+    </main>
+
+    <!-- SideNavBar (Support Trigger) -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <a class="bg-secondary dark:bg-secondary-container text-on-secondary dark:text-on-secondary-container rounded-full h-14 w-14 flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95 block"
+            href="quote.html">
+            <span class="material-symbols-outlined">chat</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer
+        class="w-full pt-section-gap pb-gutter bg-surface dark:bg-primary border-t border-outline-variant dark:border-outline">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto flex flex-col gap-gutter">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+                <div class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">iCollect</div>
+                <div class="flex flex-wrap gap-8">
+                    <div class="flex flex-col gap-2">
+                        <span
+                            class="font-statement-caps text-statement-caps text-primary uppercase tracking-widest">Contact</span>
+                        <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors"
+                            href="mailto:hello@icollect.co.za">icollect.ico@gmail.com</a>
+                        <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors"
+                            href="tel:0737783274">073 778 3274</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span
+                            class="font-statement-caps text-statement-caps text-primary uppercase tracking-widest">Hours</span>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Mon - Fri: 08:00 - 17:00</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Sat: 09:00 - 13:00</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span
+                            class="font-statement-caps text-statement-caps text-primary uppercase tracking-widest">Social</span>
+                        <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors"
+                            href="https://wa.me/message/W7LMMHQU652IN1">WhatsApp</a>
+                        <a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors"
+                            href="https://www.instagram.com/icollect_za?utm_source=qr&igsh=MWc1YjI2dHlwOTJ5MQ==">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-outline-variant/30 flex justify-between items-center">
+                <p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2026 iCollect Logistics. All
+                    rights reserved.</p>
+                <div class="flex gap-4">
+                    <span class="font-statement-caps text-statement-caps text-secondary italic">Operations Active</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        if (mobileMenuBtn && mobileDrawer) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileDrawer.classList.toggle('hidden');
+            });
+        }
+
+        const form = document.getElementById('quoteForm');
+        if (form) {
+            const submitBtn = form.querySelector('button[type="submit"]');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                submitBtn.innerHTML = `
+                    <svg class="animate-spin h-5 w-5 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Processing...
+                `;
+                submitBtn.classList.add('opacity-80', 'pointer-events-none');
+
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Sent Successfully';
+                    submitBtn.classList.remove('bg-secondary-container');
+                    submitBtn.classList.add('bg-primary-container', 'text-on-primary');
+                    form.reset();
+                }, 1800);
+            });
+        }
+    </script>
+</body>
+
+</html>

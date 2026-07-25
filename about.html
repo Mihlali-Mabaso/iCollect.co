@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About iCollect | Our Story &amp; FAQ</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="config.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body
+    class="bg-surface text-on-surface font-body-md overflow-x-hidden selection:bg-secondary-fixed-dim selection:text-on-secondary-fixed">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant">
+        <div
+            class="max-w-[1440px] mx-auto h-20 px-margin-mobile md:px-margin-desktop flex justify-between items-center">
+            <a class="font-display-lg text-display-lg text-primary tracking-tighter cursor-pointer"
+                href="index.html">iCollect</a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors duration-200"
+                    href="index.html">Home</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors duration-200"
+                    href="for-business.html">For Businesses</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors duration-200"
+                    href="how-it-works.html">How It Works</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors duration-200"
+                    href="local-proof.html">Local Proof</a>
+                <a class="font-statement-caps text-statement-caps text-on-surface-variant hover:text-secondary transition-colors duration-200"
+                    href="pricing.html">Pricing</a>
+                <a class="font-statement-caps text-statement-caps text-secondary font-bold" href="about.html">About</a>
+                <a class="bg-primary text-on-primary font-statement-caps text-statement-caps px-6 py-3 tracking-widest transition-all hover:opacity-90 active:scale-95 inline-block text-center"
+                    href="quote.html">Get a Quote</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" class="md:hidden text-primary p-2">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileDrawer"
+            class="hidden md:hidden bg-surface border-b border-outline-variant px-margin-mobile py-6 space-y-4">
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="index.html">Home</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="for-business.html">For Businesses</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="how-it-works.html">How It Works</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="local-proof.html">Local Proof</a>
+            <a class="block font-statement-caps text-statement-caps text-on-surface-variant py-2"
+                href="pricing.html">Pricing</a>
+            <a class="block font-statement-caps text-statement-caps text-secondary font-bold py-2"
+                href="about.html">About</a>
+            <a class="block bg-primary text-on-primary font-statement-caps text-statement-caps px-6 py-3 text-center tracking-widest mt-4"
+                href="quote.html">Get a Quote</a>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section / Vision Paragraph -->
+        <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-section-gap pb-gutter">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+                <div class="md:col-span-8">
+                    <h1 class="font-display-lg text-display-lg md:text-display-lg mb-8 text-balanced">More than a
+                        delivery. A promise delivered by technology.</h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        iCollect is South Africa’s leading tech-driven courier platform, reimagining the logistics
+                        landscape through quiet precision and operational transparency. We don't just move parcels; we
+                        move the needle for local businesses and individual dreams.
+                    </p>
+                </div>
+                <div class="md:col-span-4 flex md:justify-end mt-4 md:mt-0">
+                    <span
+                        class="font-statement-caps text-statement-caps text-secondary underline underline-offset-8">EST.
+                        2020 — JOHANNESBURG</span>
+                </div>
+            </div>
+            <hr class="quiet-rule mt-gutter" />
+        </section>
+
+        <!-- Values Section -->
+        <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-gutter">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 py-8">
+                <span class="font-statement-caps text-[14px] tracking-[0.4em] text-primary">R E L I A B I L I T Y</span>
+                <span class="hidden md:block text-outline-variant">/</span>
+                <span class="font-statement-caps text-[14px] tracking-[0.4em] text-primary">I N N O V A T I O N</span>
+                <span class="hidden md:block text-outline-variant">/</span>
+                <span class="font-statement-caps text-[14px] tracking-[0.4em] text-primary">T R A N S P A R E N C
+                    Y</span>
+            </div>
+            <hr class="quiet-rule" />
+        </section>
+
+        <!-- Founder Story Section -->
+        <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+                <!-- Large Portrait -->
+                <div class="md:col-span-6 relative group">
+                    <div class="aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                        <img class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
+                            data-alt="A sophisticated black and white editorial portrait of Keketso, the founder of iCollect."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR9XwTjLjYIyRPgtEgFR-we--wpKjCgvVbUVH5690nVaD6WTd8Sv0KD-uc8M4lnFPV-iPBkVzqiSUH5exnLazpK9U0Tf1-OVvJsAKiRkC-qEaKZ_QKYEnWaA3tNPW2pbhLd-T7R7pYDmLul1bUfKcryi_Oyx_Oj4Lhdjpx4jH-mNBdnbQ_-z6kZuaXwytfcWxb6j1_675mGZ-3zrSqQw-y4ecYuwQw7LPUxSC3A66fL27Gs2XUgZ3iVL61ApiK5Wogq2iwUKpzDBS5" />
+                    </div>
+                    <div class="absolute -bottom-8 -right-8 bg-primary-container p-8 text-on-primary hidden md:block">
+                        <span class="font-statement-caps text-statement-caps block mb-2 opacity-70">FOUNDER</span>
+                        <span class="font-headline-sm text-headline-sm">Keketso M.</span>
+                    </div>
+                </div>
+                <!-- First Person Narrative -->
+                <div class="md:col-span-6 flex flex-col justify-center h-full">
+                    <span class="font-statement-caps text-statement-caps text-secondary mb-4">THE FOUNDER'S VOICE</span>
+                    <h2 class="font-headline-md text-headline-md mb-8 italic">"Logistics shouldn't be a source of
+                        stress. It should be the quiet engine that powers your growth."</h2>
+                    <div class="space-y-6 text-on-surface-variant font-body-lg leading-relaxed">
+                        <p>
+                            When I started iCollect, I didn't see a courier company. I saw a communication gap. In South
+                            Africa, the challenge wasn't just getting an item from Point A to Point B; it was the
+                            anxiety of the 'black hole' in between.
+                        </p>
+                        <p>
+                            I wanted to build something that felt different. Professional, yes, but personal. I spent
+                            months on the road myself, understanding the pulse of the city and the frustrations of
+                            business owners who just needed things to work.
+                        </p>
+                        <p>
+                            Today, iCollect is that vision realized. We’ve removed the corporate jargon and replaced it
+                            with a tech-driven platform that values your time as much as you do. We don't shout about
+                            our success; we let our delivery metrics speak for themselves.
+                        </p>
+                        <p class="pt-4 font-headline-sm text-primary font-medium">
+                            Welcome to the future of logistics.
+                        </p>
+                    </div>
+                    <div class="mt-12 flex items-center gap-4">
+                        <div class="h-[1px] w-12 bg-primary"></div>
+                        <span class="font-statement-caps text-statement-caps tracking-widest uppercase">Keketso</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Honest Launch Commitment Section -->
+        <section class="bg-primary text-on-primary py-section-gap">
+            <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+                <p class="font-statement-caps text-statement-caps text-center text-secondary mb-8 tracking-[0.2em]">OUR LAUNCH COMMITMENT</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter text-center">
+                    <div class="py-8">
+                        <span class="block font-display-lg text-display-lg text-white mb-2">100%</span>
+                        <span class="font-statement-caps text-statement-caps text-white/70">TRANSPARENT LIVE TRACKING</span>
+                    </div>
+                    <div class="py-8 border-y md:border-y-0 md:border-x border-outline-variant/20">
+                        <span class="block font-display-lg text-display-lg text-white mb-2">Bloemfontein</span>
+                        <span class="font-statement-caps text-statement-caps text-white/70">FREE STATE LAUNCH CITY</span>
+                    </div>
+                    <div class="py-8">
+                        <span class="block font-display-lg text-display-lg text-white mb-2">&lt; 5m</span>
+                        <span class="font-statement-caps text-statement-caps text-white/70">PROACTIVE DELAY NOTIFICATIONS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+            <div class="mb-12">
+                <h2 class="font-display-lg text-display-lg mb-4">iCollect Frequently Asked Questions (FAQs)</h2>
+                <p class="font-body-lg text-on-surface-variant">Clear answers to help you navigate our logistics
+                    ecosystem.</p>
+            </div>
+            <div class="flex flex-col">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">What is iCollect?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>iCollect is a courier and delivery tracking platform that helps businesses manage deliveries,
+                            assign drivers, and provide customers with real time tracking.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">Who can use iCollect?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Online stores, retailers, restaurants, pharmacies, wholesalers, courier companies, and
+                            independent drivers.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">Which areas do you operate in?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Launching in Bloemfontein with plans to expand across South Africa.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">Can customers track deliveries live?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Yes, through a live tracking link with estimated arrival time.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 5 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">How do customers receive updates?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Via WhatsApp, SMS, or app notifications.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">Can I schedule deliveries?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Yes, immediate or future deliveries can be booked.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 7 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">Can iCollect integrate with my online store?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Yes, it is designed for e commerce integrations.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 8 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">Can I manage multiple drivers?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Yes, through one dashboard.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 9 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">How are drivers assigned?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Automatically or manually.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 10 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">How does iCollect make money?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Subscriptions, per delivery fees, premium features, enterprise partnerships, and API
+                            integrations.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 11 -->
+                <div class="faq-item border-t border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">What makes iCollect different?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>Affordable, SME focused, live tracking, auto assignment, WhatsApp notifications, and simple
+                            web/mobile apps.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 12 -->
+                <div class="faq-item border-t border-b border-outline-variant py-8 cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <span class="font-headline-sm text-primary">What is your vision?</span>
+                        <span class="material-symbols-outlined text-outline faq-icon">add</span>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-on-surface-variant font-body-md">
+                        <p>To become South Africa's leading last mile delivery management platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap text-center">
+            <h2 class="font-headline-md text-headline-md mb-8">Ready to experience quiet precision?</h2>
+            <a class="bg-secondary text-on-secondary px-12 py-4 font-statement-caps text-statement-caps hover:bg-secondary-container transition-colors active:scale-95 inline-block"
+                href="quote.html">START A PARTNERSHIP</a>
+        </section>
+    </main>
+
+    <!-- SideNavBar (Support Trigger) -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <a class="bg-secondary dark:bg-secondary-container text-on-secondary dark:text-on-secondary-container rounded-full h-14 w-14 flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95 group block"
+            href="quote.html">
+            <span class="material-symbols-outlined">chat</span>
+            <span
+                class="absolute right-16 bg-surface px-4 py-2 rounded shadow-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-label-sm font-label-sm border border-outline-variant">Support
+                via WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full pt-section-gap pb-gutter bg-surface border-t border-outline-variant">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto flex flex-col gap-gutter">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                <div class="max-w-xs">
+                    <span class="font-headline-sm text-headline-sm text-primary mb-4 block">iCollect</span>
+                    <p class="text-on-surface-variant font-body-md mb-4">Premium logistics for the modern era. Driven by
+                        technology, delivered with care.</p>
+                </div>
+                <div class="grid grid-cols-2 md:flex gap-12">
+                    <div class="flex flex-col gap-4">
+                        <span class="font-statement-caps text-statement-caps text-primary">Network</span>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors"
+                            href="quote.html">Contact</a>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors"
+                            href="how-it-works.html">How It Works</a>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors"
+                            href="local-proof.html">Local Proof</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <span class="font-statement-caps text-statement-caps text-primary">Social</span>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors"
+                            href="https://wa.me/message/W7LMMHQU652IN1"> WhatsApp</a>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors"
+                            href="https://www.instagram.com/icollect_za?utm_source=qr&igsh=MWc1YjI2dHlwOTJ5MQ==">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="pt-12 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="font-body-md text-body-md opacity-60">© 2026 iCollect Logistics. All rights reserved.</p>
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                    <span class="font-statement-caps text-[10px] tracking-widest text-primary">OPERATIONAL STATUS:
+                        OPTIMAL</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        if (mobileMenuBtn && mobileDrawer) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileDrawer.classList.toggle('hidden');
+            });
+        }
+
+        // FAQ accordion toggle logic
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+                if (answer) {
+                    answer.classList.toggle('hidden');
+                    icon.textContent = answer.classList.contains('hidden') ? 'add' : 'remove';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
